@@ -10,7 +10,7 @@
 
 ## Setup/Installation Requirements
 
-The repository for this project can be accessed at https://github.com/mreichman/pig-dice
+The repository for this project can be accessed at https://github.com/JasonLazzuri/PizzaPies
 
 * _Clone the directory_
 * _CD into directory ping-pong_
