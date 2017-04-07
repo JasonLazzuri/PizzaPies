@@ -6,15 +6,6 @@ function Pizza(size, topping1, topping2, topping3) {
 }
 
 
-// function topping(topping1, topping2, topping3){
-//   var toppingTotal = 0;
-//   if
-// }
-// 
-// for (var i = 4, i <)
-//
-//
-
 function totalPrice(size, topping1, topping2, topping3){
   var cost = 10;
   if((size === 4)&&(topping1 === 1)&&(topping2 === 2)&&(topping3 === 3)){
@@ -67,8 +58,8 @@ $(document).ready(function(){
     $("#topping2").text("");
     $("#topping3").text("");
 
-
-    $("#totalCost").text(newPizza.result);
     $("#order").show();
+    $("#totalCost").text(newPizza.result);
+
   });
 });

@@ -12,22 +12,17 @@
       <h1 class="jumbotron"><b>Pizza Pies!</h1>
       <form id="form">
         <div class="form-group">
-          <h3 class="well">Make Your Pizza! <br>Pick Your Size:</h3><img src="img/pizzaimage.png">
-
+          <h3 class="well">Make Your Pizza! <br>Pick Your Size:</h3><img id="image1" src="img/pizzaimage.png">
           <select class="form-control" id="size">
-            <option value="0"></option>
-            <option value="4">Xtra Large</option>
-            <option value="3">Large</option>
-            <option value="2">Medium</option>
             <option value="1">Personal Size</option>
+            <option value="2">Medium</option>
+            <option value="3">Large</option>
+            <option value="4">Xtra Large</option>
           </select>
           <h3 class="well">Select Toppings</h3>
-
-<img id="topping" src="http://buckspizza.com/wp-content/uploads/2016/01/Unique-Pizza-Toppings-Youve-Probably-Never-Tried-But-Should.jpg" alt="toppings>"
-
+          <img id="topping" src="http://buckspizza.com/wp-content/uploads/2016/01/Unique-Pizza-Toppings-Youve-Probably-Never-Tried-But-Should.jpg" alt="toppings">
           <label for="toppings"></label>
           <select class="form-control" id="topping1">
-            <option value="0"></option>
             <option value="1">Pepporoni</option>
             <option value="1">Sausage</option>
             <option value="1">Bacon</option>
@@ -38,7 +33,7 @@
           </select>
           <label for="toppings"> </label>
           <select class="form-control" id="topping2">
-            <option value="0"></option>
+            <option value=""></option>
             <option value="2">Pepporoni</option>
             <option value="2">Sausage</option>
             <option value="2">Bacon</option>
@@ -49,7 +44,7 @@
           </select>
           <label for="toppings"> </label>
           <select class="form-control" id="topping3">
-            <option value="0"></option>
+            <option value=""></option>
             <option value="3">Pepporoni</option>
             <option value="3">Sausage</option>
             <option value="3">Bacon</option>
@@ -62,7 +57,7 @@
         </div>
       </form>
       <div id="order">
-      <h3>You Ordered:</h3>
+      <h3 class="well">Your Order</h3>
       <ul>
         <p id="totalCost">
         </p>
