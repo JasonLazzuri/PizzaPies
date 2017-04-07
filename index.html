@@ -5,7 +5,6 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.0.js"></script>
     <script src="js/scripts.js"></script>
-    <meta charset="utf-8">
     <title>Pizza Ordering App!</title>
   </head>
   <body>
@@ -15,38 +14,57 @@
         <div class="form-group">
           <h3>Make Your Pizza!</h3>
           <label for="size">Size:</label>
-          <select class="form-control" id="movie">
+          <select class="form-control" id="size">
             <option value="0"></option>
-            <option value="1">Xtra Large</option>
-            <option value="2">Large</option>
-            <option value="3">Medium</option>
-            <option value="4">Personal Size</option>
+            <option value="4">Xtra Large</option>
+            <option value="3">Large</option>
+            <option value="2">Medium</option>
+            <option value="1">Personal Size</option>
           </select>
+          <h3>Select Toppings</h3>
           <label for="toppings"> </label>
-          <select class="form-control" id="topping">
+          <select class="form-control" id="topping1">
             <option value="0"></option>
             <option value="1">Pepporoni</option>
-            <option value="2">Sausage</option>
-            <option value="3">Bacon</option>
-            <option value="4">Pinneapple</option>
-            <option value="4">Oninons</option>
-            <option value="4"></option>
-            <option value="4">Pinneapple</option>
+            <option value="1">Sausage</option>
+            <option value="1">Bacon</option>
+            <option value="1">Pinneapple</option>
+            <option value="1">Oninons</option>
+            <option value="1">Olives</option>
+            <option value="1">Pinneapple</option>
           </select>
-          <label for="age">How old are you: </label>
-          <select class="form-control" id="age">
+          <label for="toppings"> </label>
+          <select class="form-control" id="topping2">
             <option value="0"></option>
-            <option value="10">10 or younger</option>
-            <option value="20">10 to 54</option>
-            <option value="65">55 and older</option>
+            <option value="2">Pepporoni</option>
+            <option value="2">Sausage</option>
+            <option value="2">Bacon</option>
+            <option value="2">Pinneapple</option>
+            <option value="2">Oninons</option>
+            <option value="2">Olives</option>
+            <option value="2">Pinneapple</option>
           </select>
-          <button type="submit" class="btn">Book</button>
+          <label for="toppings"> </label>
+          <select class="form-control" id="topping3">
+            <option value="0"></option>
+            <option value="3">Pepporoni</option>
+            <option value="3">Sausage</option>
+            <option value="3">Bacon</option>
+            <option value="3">Pinneapple</option>
+            <option value="3">Oninons</option>
+            <option value="3">Olives</option>
+            <option value="3">Pinneapple</option>
+          </select>
+          <button type="submit" class="btn">Order!</button>
         </div>
       </form>
+      <div id="order">
+      <h3>You Ordered:</h3>
+      <ul>
+        <p id="totalCost">
+        </p>
+      </ul>
     </div>
-    <div id="output">
-      <p id="totalCost">
-      </p>
     </div>
   </body>
 </html>
