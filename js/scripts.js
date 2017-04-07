@@ -10,10 +10,10 @@ function Pizza(size, topping1, topping2, topping3) {
 //   var toppingTotal = 0;
 //   if
 // }
-
-
-
-
+// 
+// for (var i = 4, i <)
+//
+//
 
 function totalPrice(size, topping1, topping2, topping3){
   var cost = 10;

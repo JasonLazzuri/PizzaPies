@@ -9,11 +9,11 @@
   </head>
   <body>
     <div class="container">
-      <h1>Pizza Pies!</h1>
+      <h1 class="jumbotron"><b>Pizza Pies!</h1>
       <form id="form">
         <div class="form-group">
-          <h3>Make Your Pizza!</h3>
-          <label for="size">Size:</label>
+          <h3 class="well">Make Your Pizza! <br>Pick Your Size:</h3><img src="img/pizzaimage.png">
+
           <select class="form-control" id="size">
             <option value="0"></option>
             <option value="4">Xtra Large</option>
@@ -21,8 +21,11 @@
             <option value="2">Medium</option>
             <option value="1">Personal Size</option>
           </select>
-          <h3>Select Toppings</h3>
-          <label for="toppings"> </label>
+          <h3 class="well">Select Toppings</h3>
+
+<img id="topping" src="http://buckspizza.com/wp-content/uploads/2016/01/Unique-Pizza-Toppings-Youve-Probably-Never-Tried-But-Should.jpg" alt="toppings>"
+
+          <label for="toppings"></label>
           <select class="form-control" id="topping1">
             <option value="0"></option>
             <option value="1">Pepporoni</option>
@@ -55,7 +58,7 @@
             <option value="3">Olives</option>
             <option value="3">Pinneapple</option>
           </select>
-          <button type="submit" class="btn">Order!</button>
+          <button type="submit" class="btn btn-primary">Order!</button>
         </div>
       </form>
       <div id="order">
