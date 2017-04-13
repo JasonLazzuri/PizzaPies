@@ -6,38 +6,33 @@ function Pizza(size, topping1, topping2, topping3) {
 }
 
 
-function totalPrice(size, topping1, topping2, topping3){
+Pizza.prototype.totalCost = function () {
   var cost = 10;
-  if((size === 4)&&(topping1 === 1)&&(topping2 === 2)&&(topping3 === 3)){
+  if((this.size === 4)&&(this.topping1 === 1)&&(this.topping2 === 2)&&(this.topping3 === 3)){
     cost +=12;
-  }else if((size === 4)&&(topping1 === 1)&&(topping2 === 2)){
+  }else if((this.size === 4)&&(this.topping1 === 1)&&(this.topping2 === 2)){
     cost +=10;
-  }else if ((size === 4)&&(topping1 === 1)){
+  }else if ((this.size === 4)&&(this.topping1 === 1)){
       cost += 9;
-  }else if((size === 3)&&(topping3 === 3)&&(topping2 === 2)&&(topping1 === 1)){
+  }else if((this.size === 3)&&(this.topping3 === 3)&&(this.topping2 === 2)&&(this.topping1 === 1)){
     cost +=10;
-  }else if((size === 3)&&(topping2 === 2)&&(topping1 === 1)){
+  }else if((this.size === 3)&&(this.topping2 === 2)&&(this.topping1 === 1)){
     cost +=8;
-  }else if ((size === 3)&&(topping1 === 1)){
+  }else if ((this.size === 3)&&(this.topping1 === 1)){
       cost += 7;
-  }else if((size === 2)&&(topping3 === 3)&&(topping2 === 2)&&(topping1 === 1)){
+  }else if((this.size === 2)&&(this.topping3 === 3)&&(this.topping2 === 2)&&(this.topping1 === 1)){
       cost +=8;
-    }else if((size === 2)&&(topping2 === 2)&&(topping1 === 1)){
+    }else if((this.size === 2)&&(this.topping2 === 2)&&(this.topping1 === 1)){
       cost +=6;
-    }else if ((size === 2)&&(topping1 === 1)){
+    }else if ((this.size === 2)&&(this.topping1 === 1)){
         cost += 5;
-    }else if((size === 1)&&(topping3 === 3)&&(topping2 === 2)&&(topping1 === 1)){
+    }else if((this.size === 1)&&(this.topping3 === 3)&&(this.topping2 === 2)&&(this.topping1 === 1)){
         cost +=7;
-      }else if((size === 1)&&(topping2 === 2)&&(topping1 === 1)){
+      }else if((this.size === 1)&&(this.topping2 === 2)&&(this.topping1 === 1)){
         cost +=6;
-      }else if ((size === 1)&&(topping1 === 1)){
+      }else if ((this.size === 1)&&(this.topping1 === 1)){
           cost += 5;
-        }return "$" + cost + ".00.";
-}
-
-
-Pizza.prototype.result = function () {
-return  "Thanks for Ordering! Your pizza will be ready soon! Your Total is " + cost
+        }return "Thanks for Ordering! Your pizza will be ready soon! Your Total is " + "$" + cost + ".00.";
 }
 
 
@@ -51,7 +46,7 @@ $(document).ready(function(){
     var topping3 = parseInt($("#topping3").val());
 
     var newPizza = new Pizza(size, topping1, topping2, topping3);
-    cost = totalPrice(newPizza.size, newPizza.topping1, newPizza.topping2, newPizza.topping3);
+    var cost = newPizza.totalCost();
 
     $("#size").text("");
     $("#topping1").text("");
@@ -59,7 +54,7 @@ $(document).ready(function(){
     $("#topping3").text("");
 
     $("#order").show();
-    $("#totalCost").text(newPizza.result);
+    $("#totalCost").text(cost);
 
   });
 });

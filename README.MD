@@ -6,14 +6,24 @@
 
 ## Specifications
 
-* This website is designed to take orders for pizza. It gives the customer options for how large they want the pizza and it gives options for toppings. Based on the amount of toppings and the size you select, you will get a price to display at the bottom.
+* This website is designed to take orders for pizza.
+
+* It gives the customer options for how large they want the pizza;
+  Example: Personal, medium, large, xtra large;
+
+* It gives options for toppings.
+ Example: Pepporoni, Sausage, Olives, Bacon, etc.
+
+* Based on the amount of toppings and the size you select, you will get a price to display at the bottom.
+ Example: Xtra Large 3 topping pizza (selected)
+ Output: $22.00
 
 ## Setup/Installation Requirements
 
 The repository for this project can be accessed at https://github.com/JasonLazzuri/PizzaPies
 
 * _Clone the directory_
-* _CD into directory ping-pong_
+* _CD into directory PizzaPies_
 * _Open all files using atom_
 
 ## Support and contact details
