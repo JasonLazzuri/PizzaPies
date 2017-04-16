@@ -21,18 +21,18 @@ Pizza.prototype.totalCost = function () {
   }else if ((this.size === 3)&&(this.topping1 === 1)){
       cost += 7;
   }else if((this.size === 2)&&(this.topping3 === 3)&&(this.topping2 === 2)&&(this.topping1 === 1)){
-      cost +=8;
-    }else if((this.size === 2)&&(this.topping2 === 2)&&(this.topping1 === 1)){
-      cost +=6;
-    }else if ((this.size === 2)&&(this.topping1 === 1)){
-        cost += 5;
-    }else if((this.size === 1)&&(this.topping3 === 3)&&(this.topping2 === 2)&&(this.topping1 === 1)){
-        cost +=7;
-      }else if((this.size === 1)&&(this.topping2 === 2)&&(this.topping1 === 1)){
-        cost +=6;
-      }else if ((this.size === 1)&&(this.topping1 === 1)){
-          cost += 5;
-        }return "Thanks for Ordering! Your pizza will be ready soon! Your Total is " + "$" + cost + ".00.";
+    cost +=8;
+  }else if((this.size === 2)&&(this.topping2 === 2)&&(this.topping1 === 1)){
+    cost +=6;
+  }else if ((this.size === 2)&&(this.topping1 === 1)){
+      cost += 5;
+  }else if((this.size === 1)&&(this.topping3 === 3)&&(this.topping2 === 2)&&(this.topping1 === 1)){
+      cost +=7;
+  }else if((this.size === 1)&&(this.topping2 === 2)&&(this.topping1 === 1)){
+    cost +=6;
+  }else if ((this.size === 1)&&(this.topping1 === 1)){
+      cost += 5;
+  }return "Thanks for Ordering! Your pizza will be ready soon! Your Total is " + "$" + cost + ".00.";
 }
 
 
